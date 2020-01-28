@@ -30,14 +30,17 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\hex\coding\Zoho\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LangTestTest">
+  <component name="RunManager" selected="JUnit.LoginpageTest">
     <configuration name="AboutTestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Zoho" />
       <option name="PACKAGE_NAME" value="" />
@@ -56,6 +59,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FindZiaTestTest.findZiaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Zoho" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindZiaTestTest" />
+      <option name="METHOD_NAME" value="findZiaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LangTestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Zoho" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,8 +78,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginpageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Zoho" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginpageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginpageTest" />
+        <item itemvalue="JUnit.FindZiaTestTest.findZiaTest" />
         <item itemvalue="JUnit.LangTestTest" />
         <item itemvalue="JUnit.FindZiaTestTest" />
         <item itemvalue="JUnit.AboutTestTest" />
@@ -91,25 +115,43 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1580223071174" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1580223635636">
+    <state x="566" y="273" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580226397238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580223635636" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1580223635635">
+    <state x="566" y="273" width="403" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1580226397238" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1580226600003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580223635635" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1580223635635">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580226600003" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1580226600002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580223635635" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1580223635635">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580226600002" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1580226600002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580223635635" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1580223563101">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580226600002" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1580226600003">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580223563101" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580226600003" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1580225445870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580225445870" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/FindZiaTestTest.java</url>
+          <line>39</line>
+          <properties class="FindZiaTestTest" method="findZiaTest">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

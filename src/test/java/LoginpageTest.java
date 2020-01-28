@@ -22,12 +22,13 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class FindZiaTestTest {
+public class LoginpageTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
   public void setUp() {
+    //System.setProperty("webdriver.chrome.driver", "/Users/User/IdeaProjects/Herokuapp/src/main/resources/chromedriver.exe");
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
@@ -37,26 +38,27 @@ public class FindZiaTestTest {
     driver.quit();
   }
   @Test
-  public void findZiaTest() {
+  public void loginpage() {
     driver.get("https://www.zoho.com/");
     driver.manage().window().setSize(new Dimension(1552, 840));
     {
-      WebDriverWait wait = new WebDriverWait(driver, 5);
-      wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".footer-search-input")));
-    }
-    driver.findElement(By.cssSelector(".footer-search-input")).click();
-    driver.findElement(By.cssSelector(".footer-search-input")).sendKeys("zia");
-    driver.findElement(By.cssSelector(".footer-search-btn > span")).click();
-    {
-      WebDriverWait wait = new WebDriverWait(driver, 5);
-      wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Zia – Zoho\'s AI assistant for business.")));
-    }
-    {
-      WebElement element = driver.findElement(By.cssSelector(".ws_rp_outer:nth-child(2) > .ws_rp_right"));
+      WebElement element = driver.findElement(By.linkText("Login"));
       Actions builder = new Actions(driver);
       builder.moveToElement(element).perform();
     }
-    assertThat(driver.findElement(By.linkText("Zia – Zoho\'s AI assistant for business.")).getText(), is("Zia – Zoho\\\'s AI assistant for business."));
+    driver.findElement(By.linkText("Login")).click();
+    {
+      WebElement element = driver.findElement(By.tagName("body"));
+      Actions builder = new Actions(driver);
+      builder.moveToElement(element, 0, 0).perform();
+    }
+    driver.findElement(By.id("login_id")).sendKeys("&#**#");
+    {
+      WebDriverWait wait = new WebDriverWait(driver, 5);
+      wait.until(ExpectedConditions.presenceOfElementLocated(By.id("nextbtn")));
+    }
+    driver.findElement(By.id("nextbtn")).click();
+    assertThat(driver.findElement(By.cssSelector(".errorlabel")).getText(), is("Please verify your email address and try again."));
     driver.close();
   }
 }
